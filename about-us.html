@@ -157,7 +157,7 @@
 									<div class="vr opacity-2 ms-auto d-none d-xl-inline-block"></div>
 									<div class="px-4 d-none d-xxl-inline-block ws-nowrap">
 										<a href="#"
-											class="btn border-0 px-4 py-2 line-height-9 btn-tertiary me-2">Request
+											class="btn border-0 px-4 py-2 line-height-9 btn-tertiary me-2" data-bs-toggle="modal" data-bs-target="#formModal">Request
 											Rate</a>
 										<a href="#" class="btn border-0 px-4 py-2 line-height-9 btn-primary">Track
 											Order</a>
@@ -174,8 +174,8 @@
 
 			<div class="custom-page-header border-bottom-light">
 				<section
-					class="page-header page-header-modern page-header-lg overlay overlay-light overlay-show overlay-op-9 m-0"
-					style="background-image: url(img/demos/transportation-logistic/backgrounds/background-1.jpg); background-size: cover; background-position: center;">
+					class="page-header page-header-modern page-header-lg overlay overlay-dark overlay-show overlay-op-3 m-0"
+					style="background-image: url(img/1920x800slid.jpg); background-size: cover; background-position: center;">
 					<div class="container py-4">
 						<div class="row">
 							<div class="col">
@@ -224,16 +224,16 @@
 					<div class="col-lg-6">
 						<div class="cascading-images-wrapper mt-5">
 							<div class="cascading-images position-relative">
-								<img src="img/demos/transportation-logistic/services/service-1.jpg"
+								<img src="img/About 03.jpg"
 									class="appear-animation" width="500" alt="" data-appear-animation="expandIn"
 									data-appear-animation-duration="600ms" />
 								<div class="position-absolute w-100" style="top: 41%; left: -30%;">
-									<img src="img/demos/transportation-logistic/services/service-2.jpg"
+									<img src="img/About 02.jpg"
 										class="appear-animation" width="500" alt="" data-appear-animation="expandIn"
 										data-appear-animation-delay="300" data-appear-animation-duration="600ms" />
 								</div>
 								<div class="position-absolute w-100" style="top: 75%; left: 30%;">
-									<img src="img/demos/transportation-logistic/services/service-3.jpg"
+									<img src="img/About1.jpg"
 										class="appear-animation" width="500" alt="" data-appear-animation="expandIn"
 										data-appear-animation-delay="600" data-appear-animation-duration="600ms" />
 								</div>
@@ -269,13 +269,92 @@
 							<span class="d-inline-block appear-animation" data-appear-animation="fadeInUpShorterPlus"
 								data-appear-animation-delay="300">
 								<a href="tel:+14376840666"
-									class="btn btn-light text-color-tertiary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Call
-									Now</a>
+									class="btn btn-light text-color-tertiary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3"
+									data-bs-toggle="modal" data-bs-target="#formModal">Get a Quote</a>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!--START MODAL-->
+			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="formModalLabel">Get Quick Quote</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"
+								aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+								
+								<div class="contact-form-success alert alert-success d-none mt-4">
+									<strong>Success!</strong> Your message has been sent to us.
+								</div>
+
+								<div class="contact-form-error alert alert-danger d-none mt-4">
+									<strong>Error!</strong> There was an error sending your message.
+									<span class="mail-error-message text-1 d-block"></span>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Full Name</label>
+										<input type="text" value="" data-msg-required="Please enter your name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Email Address</label>
+										<input type="email" value="" data-msg-required="Please enter your email"
+											data-msg-email="Please enter a valid email" maxlength="100"
+											class="form-control text-3 h-auto py-2" name="email" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Date of Moving</label>
+										<input type="date" name="movingdate" class="form-control"
+										data-msg-required="Please enter date" placeholder="Date" />
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Specialized moving</label>
+										<select class="form-select form-control h-auto py-2" data-msg-required="" name="specializedmoving" required>
+											<option value="">Choose...</option>
+											<option value="1">Apartment Piano</option>
+											<option value="2">Upright Piano</option>
+											<option value="3">Baby Grand Piano</option>
+											<option value="4">Grand Piano</option>
+											<option value="5">Room or Less</option>
+											<option value="6">Studio Apartment</option>
+											<option value="7">1 Bedroom Apartment</option>
+											<option value="8">2 Bedroom Apartment</option>
+											<option value="9">3 Bedroom Apartment</option>
+										  </select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Pick up Address</label>
+										<textarea rows="2" name="pickup" class="form-control" placeholder="address"
+											data-msg-required="Please enter address" required></textarea>
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Drop Address</label>
+										<textarea rows="2" name="drop"class="form-control" placeholder="address"
+											data-msg-required="Please enter address" required></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-primary" data-loading-text="Loading..."> Save Changes</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--MODAL END-->
 			<section class="section my-0 py-5 border-0  text-color-light p-relative overflow-hidden"
 				style="background-color: rgb(56, 168, 56);">
 				<div class="container container-xl-custom">

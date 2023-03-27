@@ -33,7 +33,7 @@ p {
 .custom-stroke-text-effect-1 {
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: #FFF;
+		/*-webkit-text-stroke-color: #FFF;*/
 		white-space: nowrap;
 }
 
