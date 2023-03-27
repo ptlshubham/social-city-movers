@@ -54,7 +54,98 @@
 
 </head>
 
-<body data-plugin-page-transition>
+<body class="loading-overlay-showing" data-plugin-page-transition data-plugin-cursor-effect data-loading-overlay
+	data-plugin-options="{'size': 'big','hideDelay': 500, 'effect': 'percentageProgress1'}">
+	<!-- GDPR Bar -->
+	<div class="gdpr-bar" data-plugin-gdpr>
+		<div class="gdpr-bar-description">
+			<p class="text-color-light opacity-7 mb-0">We use cookies to improve user experience and analyze website
+				traffic. Read about how we use cookies and how you can control them by clicking "Privacy Preferences".
+			</p>
+		</div>
+		<div class="gdpr-bar-actions">
+			<a href="#" class="gdpr-preferences-trigger text-decoration-none text-color-light">Privacy Preferences</a>
+			<a href="#"
+				class="gdpr-agree-trigger text-decoration-none btn btn-primary btn-modern btn-px-4 py-3 font-weight-bold">I
+				Agree</a>
+		</div>
+	</div>
+
+	<!-- GDPR Preferences Popup -->
+	<div class="gdpr-preferences-popup">
+		<div class="gdpr-preferences-popup-content position-relative">
+			<a href="#" class="gdpr-close-popup text-color-grey text-color-hover-dark">
+				<i class="fas fa-times"></i>
+			</a>
+			<form class="gdpr-preferences-form">
+				<div class="gdpr-preferences-popup-content-body">
+					<h4 class="text-color-dark font-weight-bold mb-3">Privacy Preferences</h4>
+					<p>When you visit any website, it may store or retrieve information through your browser, usually in
+						the form of cookies. Since we respect your right to privacy, you can choose not to permit data
+						collection from certain types of services. However, not allowing these services may impact your
+						experience.</p>
+					<hr>
+
+					<div class="gdpr-cookie-item">
+						<div class="gdpr-cookie-item-title">
+							<strong class="text-color-dark">Privacy Policy</strong>
+						</div>
+						<div class="gdpr-cookie-item-description">
+							<p class="mb-0">You read and agreed to our <a href="privacypolicy.html">Privacy Policy</a>
+							</p>
+						</div>
+						<div class="gdpr-cookie-item-action">
+							<strong class="text-color-dark text-2">REQUIRED</strong>
+							<input type="hidden" name="cookies_consent[]" class="gdpr-input" value="privacy-policy" />
+						</div>
+					</div>
+					<div class="gdpr-cookie-item">
+						<div class="gdpr-cookie-item-title">
+							<strong class="text-color-dark">YouTube</strong>
+						</div>
+						<div class="gdpr-cookie-item-description">
+							<p class="mb-0">We use the YouTube service to enable video content streaming on this site.
+							</p>
+						</div>
+						<div class="gdpr-cookie-item-action">
+							<input type="checkbox" name="cookies_consent[]" class="gdpr-input custom-checkbox-switch"
+								value="youtube" />
+						</div>
+					</div>
+					<div class="gdpr-cookie-item">
+						<div class="gdpr-cookie-item-title">
+							<strong class="text-color-dark">Facebook & Instagram</strong>
+						</div>
+						<div class="gdpr-cookie-item-description">
+							<p class="mb-0">We use the Facebook and Instagram services to enable social network content
+								on this site.</p>
+						</div>
+						<div class="gdpr-cookie-item-action">
+							<input type="checkbox" name="cookies_consent[]" class="gdpr-input custom-checkbox-switch"
+								value="facebookinstagram" />
+						</div>
+					</div>
+					<div class="gdpr-cookie-item">
+						<div class="gdpr-cookie-item-title">
+							<strong class="text-color-dark">Google Maps</strong>
+						</div>
+						<div class="gdpr-cookie-item-description">
+							<p class="mb-0">We use the Google Maps service to enable maps content on this site.</p>
+						</div>
+						<div class="gdpr-cookie-item-action">
+							<input type="checkbox" name="cookies_consent[]" class="gdpr-input custom-checkbox-switch"
+								value="googlemaps" />
+						</div>
+					</div>
+				</div>
+				<div class="gdpr-preferences-popup-content-footer">
+					<button type="submit" class="btn btn-primary btn-modern btn-px-4 py-3 font-weight-bold">Save
+						Preferences</button>
+					<a href="privacypolicy.html" class="text-color-default text-color-hover-primary">Privacy Policy</a>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<div class="p-relative bottom-1">
 		<header id="header" class="header-effect-reveal"
@@ -66,8 +157,7 @@
 							<div class="header-row">
 								<div class="header-logo p-relative top-1 m-0">
 									<a href="index.html">
-										<img alt="Porto" width="320" height="150"
-											src="img/mainLogo.png">
+										<img alt="Porto" width="320" height="150" src="img/mainLogo.png">
 									</a>
 								</div>
 							</div>
@@ -76,10 +166,11 @@
 							<div class="border-bottom-light w-100">
 								<div class="hstack gap-4 px-4 py-2 font-weight-semi-bold d-none d-lg-flex">
 									<div class="d-none d-lg-inline-block ps-1">
-											<a href="tel:+14376840666" class="text-color-default text-color-hover-primary text-2">
-												<i class="icon icon-phone text-4-5 me-2"></i>
-												+1 (437) 684-0666
-											</a>
+										<a href="tel:+14376840666"
+											class="text-color-default text-color-hover-primary text-2">
+											<i class="icon icon-phone text-4-5 me-2"></i>
+											+1 (437) 684-0666
+										</a>
 									</div>
 									<div class="vr d-lg-inline-block opacity-2 d-none d-xl-inline-block"></div>
 									<div class="d-none d-xl-inline-block">
@@ -819,8 +910,9 @@
 							<p class="text-color-light text-4-5 font-weight-medium line-height-4 mb-0">
 								<span class="d-inline-block appear-animation"
 									data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="0">
-									You can reach our local team by calling us directly on  <a href="tel:+14376840666" style="color: white;">+1 (437) 684 0666</a>. 
-									If you prefer, you can also use our simple Online Contact Form, and we’ll 
+									You can reach our local team by calling us directly on <a href="tel:+14376840666"
+										style="color: white;">+1 (437) 684 0666</a>.
+									If you prefer, you can also use our simple Online Contact Form, and we’ll
 									get back to you as soon as possible.
 								</span>
 							</p>
@@ -829,15 +921,96 @@
 							<span class="d-inline-block appear-animation" data-appear-animation="fadeInUpShorterPlus"
 								data-appear-animation-delay="300">
 								<a href="tel:+14376840666"
-									class="btn btn-light text-color-tertiary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3">Call
-									Now</a>
+									class="btn btn-light text-color-tertiary border-0 text-3-5 font-weight-semi-bold btn-px-5 btn-py-3"
+									data-bs-toggle="modal" data-bs-target="#formModal">Call Now</a>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div>
-
+			<section class="parallax section section-text-light section-parallax section-center mt-0"
+				data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '200%'}"
+				data-image-src="img/parallax/parallax-2.jpg">
+				<div class="container position-relative">
+					<div class="row counters counters-text-light">
+						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="counter">
+								<i class="fas fa-user"></i>
+								<strong data-to="45000" data-append="+">0</strong>
+								<label>Happy Clients</label>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="counter">
+								<i class="fas fa-star"></i>
+								<strong data-to="15">0</strong>
+								<label>Years in Business</label>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+							<div class="counter">
+								<i class="fas fa-coffee"></i>
+								<strong data-to="352">0</strong>
+								<label>Cups of Coffee</label>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="counter">
+								<i class="far fa-chart-bar"></i>
+								<strong data-to="178">0</strong>
+								<label>High Score</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="formModalLabel">Get Quick Quote</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"
+								aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form id="demo-form" class="mb-4" novalidate="novalidate">
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Name</label>
+									<div class="col-sm-9">
+										<input type="text" name="name" class="form-control"
+											placeholder="Type your name..." required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Email</label>
+									<div class="col-sm-9">
+										<input type="email" name="email" class="form-control"
+											placeholder="Type your email..." required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-start text-sm-end mb-0">URL</label>
+									<div class="col-sm-9">
+										<input type="url" name="url" class="form-control"
+											placeholder="Type an URL..." />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-3 text-start text-sm-end mb-0">Comment</label>
+									<div class="col-sm-9">
+										<textarea rows="5" class="form-control" placeholder="Type your comment..."
+											required></textarea>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save Changes</button>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<section class="section my-0 py-5 border-0  text-color-light p-relative overflow-hidden"
@@ -1303,7 +1476,7 @@
 			<hr>
 
 		</div>
-		 <footer id="footer" class="position-relative top-1 bg-tertiary border-top-0">
+		<footer id="footer" class="position-relative top-1 bg-tertiary border-top-0">
 
 			<div class="container">
 				<div class="row pt-5">
@@ -1311,15 +1484,16 @@
 						<div class="row mb-5">
 							<div class="col-lg-12 mb-4 mb-lg-0">
 								<a href="index.html" class="text-decoration-none">
-									<img src="img/mainLogo.png" class="img-fluid mb-4" style="height: 200px;width: 500px;">
+									<img src="img/mainLogo.png" class="img-fluid mb-4"
+										style="height: 200px;width: 500px;">
 								</a>
 								<!-- <p class="text-3-5 pe-lg-2"><i class="icon-location-pin icons"> </i>12 York street, M5J0A9, 
 									<br>Toronto, Ontario</p> -->
 							</div>
-							
-						</div>	
-						
-						
+
+						</div>
+
+
 						<!-- <div class="d-none d-xxl-inline-block ws-nowrap">
 							<a href="#"
 								class="btn border-0 px-4 py-2 line-height-9 btn-light text-color-dark me-2">Request
@@ -1332,11 +1506,16 @@
 							<div class="col-lg-4 mb-4 mb-lg-0">
 								<h4 class="text-color-light font-weight-semibold mb-3">Navigation</h4>
 								<ul class="list list-unstyled">
-									<li><a href="index.html" class="text-color-grey text-color-hover-light">Home</a></li>
-									<li><a href="about-us.html" class="text-color-grey text-color-hover-light">About Us</a></li>
-									<li><a href="services.html" class="text-color-grey text-color-hover-light">Services</a></li>
-									<li><a href="contact-us.html" class="text-color-grey text-color-hover-light">Contact Us</a></li>
-									<li><a href="environment.html" class="text-color-grey text-color-hover-light">Moving Tree</a></li>
+									<li><a href="index.html" class="text-color-grey text-color-hover-light">Home</a>
+									</li>
+									<li><a href="about-us.html" class="text-color-grey text-color-hover-light">About
+											Us</a></li>
+									<li><a href="services.html"
+											class="text-color-grey text-color-hover-light">Services</a></li>
+									<li><a href="contact-us.html" class="text-color-grey text-color-hover-light">Contact
+											Us</a></li>
+									<li><a href="environment.html" class="text-color-grey text-color-hover-light">Moving
+											Tree</a></li>
 								</ul>
 							</div>
 							<div class="col-lg-4">
@@ -1344,29 +1523,36 @@
 								<ul class="list list-unstyled">
 									<li><a href="blog.html" class="text-color-grey text-color-hover-light">Blogs</a>
 									</li>
-                                    <li><a href="privacypolicy.html" class="text-color-grey text-color-hover-light">Privacy Policy</a>
-									</li>	
-									<li><a href="termsandcondition.html" class="text-color-grey text-color-hover-light">Terms and Conditions</a>
+									<li><a href="privacypolicy.html"
+											class="text-color-grey text-color-hover-light">Privacy Policy</a>
+									</li>
+									<li><a href="termsandcondition.html"
+											class="text-color-grey text-color-hover-light">Terms and Conditions</a>
 									</li>
 								</ul>
 							</div>
-                            <div class="col-lg-4 mb-4 mb-lg-0">
+							<div class="col-lg-4 mb-4 mb-lg-0">
 								<h4 class="text-color-light font-weight-semibold mb-3">Contacts</h4>
 								<ul class="list list-unstyled">
-                                    <li class="d-flex align-items-center mb-4">
-                                        <a class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i class="icon-location-pin icons text-4-5 me-2"> </i> 12 York street, M5J0A9, 
-                                            Toronto, Ontario</a>
-                                    </li>
 									<li class="d-flex align-items-center mb-4">
-										<a href="mailto:move@socialcitymovers.com" target="_blank"
-                                        class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i class="far fa-envelope text-4-5 me-2"></i> move@socialcitymovers.com</a>
+										<a
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i
+												class="icon-location-pin icons text-4-5 me-2"> </i> 12 York street,
+											M5J0A9,
+											Toronto, Ontario</a>
 									</li>
 									<li class="d-flex align-items-center mb-4">
-										<a href="tel:+14376840666" class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1">
+										<a href="mailto:move@socialcitymovers.com" target="_blank"
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i
+												class="far fa-envelope text-4-5 me-2"></i> move@socialcitymovers.com</a>
+									</li>
+									<li class="d-flex align-items-center mb-4">
+										<a href="tel:+14376840666"
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1">
 											<i class="icon icon-phone text-4-5 me-2"></i>
 											+1 (437) 684-0666
 										</a>
-									</li>	
+									</li>
 									<li>
 										<div class="d-none d-lg-inline-block">
 											<ul class="social-icons social-icons-clean social-icons-medium">
@@ -1381,7 +1567,8 @@
 													</a>
 												</li>
 												<li class="social-icons-instagram">
-													<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+													<a href="http://www.instagram.com/" target="_blank"
+														title="Instagram">
 														<i class="fab fa-instagram text-color-light"></i>
 													</a>
 												</li>

@@ -54,7 +54,8 @@
 
 </head>
 
-<body data-plugin-page-transition>
+<body class="loading-overlay-showing" data-plugin-page-transition data-plugin-cursor-effect data-loading-overlay
+	data-plugin-options="{'size': 'big','hideDelay': 500, 'effect': 'percentageProgress1'}">
 
 	<div class="p-relative bottom-1">
 		<header id="header" class="header-effect-reveal"
@@ -66,8 +67,7 @@
 							<div class="header-row">
 								<div class="header-logo p-relative top-1 m-0">
 									<a href="index.html">
-										<img alt="Porto" width="320" height="150"
-											src="img/mainLogo.png">
+										<img alt="Porto" width="320" height="150" src="img/mainLogo.png">
 									</a>
 								</div>
 							</div>
@@ -76,10 +76,11 @@
 							<div class="border-bottom-light w-100">
 								<div class="hstack gap-4 px-4 py-2 font-weight-semi-bold d-none d-lg-flex">
 									<div class="d-none d-lg-inline-block ps-1">
-											<a href="tel:+14376840666" class="text-color-default text-color-hover-primary text-2">
-												<i class="icon icon-phone text-4-5 me-2"></i>
-												+1 (437) 684-0666
-											</a>
+										<a href="tel:+14376840666"
+											class="text-color-default text-color-hover-primary text-2">
+											<i class="icon icon-phone text-4-5 me-2"></i>
+											+1 (437) 684-0666
+										</a>
 									</div>
 									<div class="vr d-lg-inline-block opacity-2 d-none d-xl-inline-block"></div>
 									<div class="d-none d-xl-inline-block">
@@ -120,8 +121,7 @@
 												<nav class="collapse">
 													<ul class="nav nav-pills" id="mainNav">
 														<li class="dropdown">
-															<a href="index.html"
-																class="nav-link">
+															<a href="index.html" class="nav-link">
 																Home
 															</a>
 														</li>
@@ -131,14 +131,12 @@
 															</a>
 														</li>
 														<li>
-															<a class="nav-link"
-																href="services.html">
+															<a class="nav-link" href="services.html">
 																Services
 															</a>
 														</li>
 														<li>
-															<a class="nav-link"
-																href="blog.html">
+															<a class="nav-link" href="blog.html">
 																Blogs
 															</a>
 														</li>
@@ -195,9 +193,14 @@
 			</div>
 
 			<div class="container">
-				<div class="row py-5 my-3">
-					<div class="col">
-						<form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+
+				<div class="row py-4">
+					<div class="col-lg-6">
+
+						<!-- <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2> -->
+						<p class="mb-4">Feel free to ask for details, don't save any questions!</p>
+
+						<form class="contact-form" action="php/contact-form.php" method="POST">
 							<div class="contact-form-success alert alert-success d-none mt-4">
 								<strong>Success!</strong> Your message has been sent to us.
 							</div>
@@ -207,79 +210,107 @@
 								<span class="mail-error-message text-1 d-block"></span>
 							</div>
 
-							<div class="row row-gutter-sm">
-								<div class="form-group col-lg-6 mb-4">
+							<div class="row">
+								<div class="form-group col-lg-6">
+									<label class="form-label mb-1 text-2">Full Name</label>
 									<input type="text" value="" data-msg-required="Please enter your name."
-										maxlength="100" class="form-control" name="name" id="name" required
-										placeholder="Your Name">
+										maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
 								</div>
-								<div class="form-group col-lg-6 mb-4">
-									<input type="text" value="" data-msg-required="Please enter your phone number."
-										maxlength="100" class="form-control" name="phone" id="phone" required
-										placeholder="Phone Number">
-								</div>
-							</div>
-							<div class="row row-gutter-sm">
-								<div class="form-group col-lg-6 mb-4">
+								<div class="form-group col-lg-6">
+									<label class="form-label mb-1 text-2">Email Address</label>
 									<input type="email" value="" data-msg-required="Please enter your email address."
 										data-msg-email="Please enter a valid email address." maxlength="100"
-										class="form-control" name="email" id="email" required placeholder="Your Name">
+										class="form-control text-3 h-auto py-2" name="email" required>
 								</div>
-								<div class="form-group col-lg-6 mb-4">
+							</div>
+							<div class="row">
+								<div class="form-group col">
+									<label class="form-label mb-1 text-2">Subject</label>
 									<input type="text" value="" data-msg-required="Please enter the subject."
-										maxlength="100" class="form-control" name="subject" id="subject" required
-										placeholder="Subject">
+										maxlength="100" class="form-control text-3 h-auto py-2" name="subject" required>
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group col mb-4">
-									<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10"
-										class="form-control" name="message" id="message" required
-										placeholder="Your Message"></textarea>
+								<div class="form-group col">
+									<label class="form-label mb-1 text-2">Message</label>
+									<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8"
+										class="form-control text-3 h-auto py-2" name="message" required></textarea>
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group col mb-0">
-									<button type="submit"
-										class="btn btn-tertiary border-0 text-3 font-weight-semi-bold btn-px-5 btn-py-3 d-none d-md-inline-block"
-										data-loading-text="Loading...">Send Message</button>
+								<div class="form-group col">
+									<input type="submit" value="Send Message" class="btn btn-primary btn-modern"
+										data-loading-text="Loading...">
 								</div>
 							</div>
 						</form>
+
 					</div>
+					<div class="col-lg-6">
+
+						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+							<h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
+							<ul class="list list-icons list-icons-style-2 mt-2">
+								<li><i class="fas fa-map-marker-alt top-6"></i> <strong
+										class="text-dark">Address:</strong> 1234 Street Name, City Name, United States
+								</li>
+								<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123)
+									456-789</li>
+								<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a
+										href="mailto:mail@example.com">mail@example.com</a></li>
+							</ul>
+						</div>
+
+						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
+							<h4 class="pt-5">Business <strong>Hours</strong></h4>
+							<ul class="list list-icons list-dark mt-2">
+								<li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
+								<li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
+								<li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+							</ul>
+						</div>
+
+						<h4 class="pt-5">Get in <strong>Touch</strong></h4>
+						<p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+							eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					</div>
+
 				</div>
+
 			</div>
 
 			<hr>
 
 		</div>
 		<section class="section my-0 py-5 border-0  text-color-light p-relative overflow-hidden"
-				style="background-color: rgb(56, 168, 56);">
-				<div class="container container-xl-custom">
-					<div class="row align-items-center ">
-						<div class="col-lg-3 text-lg-end">
-							<h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-0 appear-animation"
-								data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"
-								data-plugin-options="{'minWindowWidth': 0}">Leaving a tree for<br><span
-									class="font-weight-extra-bold custom-highlight-1 custom-highlight-1-tertiary ws-nowrap p-1 custom-highlight-anim custom-highlight-anim-delay">every move!</span>
-							</h2>
-						</div>
-						<div class="col-lg-6 mt-3 mt-lg-0">
-							<p class="mb-0 text-color-light ps-lg-5">By planting a tree with every move, we are not only
-								taking positive action towards reducing our carbon footprint, but also leaving a lasting
-								legacy for generations to come. Join us in our mission to create a greener, more
-								sustainable future for our planet, and let's make every step count
-								towards a better world.</p>
-						</div>
-						<div class="col-lg-3 mt-3 mt-lg-0 text-lg-end">
-							<a href="environment.html"
-								class="btn btn-modern btn-light text-color-dark font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">GET
-								A QUOTE <i class="fas fa-arrow-right ms-2"></i></a>
-						</div>
+			style="background-color: rgb(56, 168, 56);">
+			<div class="container container-xl-custom">
+				<div class="row align-items-center ">
+					<div class="col-lg-3 text-lg-end">
+						<h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-0 appear-animation"
+							data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"
+							data-plugin-options="{'minWindowWidth': 0}">Leaving a tree for<br><span
+								class="font-weight-extra-bold custom-highlight-1 custom-highlight-1-tertiary ws-nowrap p-1 custom-highlight-anim custom-highlight-anim-delay">every move!</span>
+						</h2>
+					</div>
+					<div class="col-lg-6 mt-3 mt-lg-0">
+						<p class="mb-0 text-color-light ps-lg-5">By planting a tree with every move, we are not only
+							taking positive action towards reducing our carbon footprint, but also leaving a lasting
+							legacy for generations to come. Join us in our mission to create a greener, more
+							sustainable future for our planet, and let's make every step count
+							towards a better world.</p>
+					</div>
+					<div class="col-lg-3 mt-3 mt-lg-0 text-lg-end">
+						<a href="environment.html"
+							class="btn btn-modern btn-light text-color-dark font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">GET
+							A QUOTE <i class="fas fa-arrow-right ms-2"></i></a>
 					</div>
 				</div>
-			</section>	
-		 <footer id="footer" class="position-relative top-1 bg-tertiary border-top-0">
+			</div>
+		</section>
+		<footer id="footer" class="position-relative top-1 bg-tertiary border-top-0">
 
 			<div class="container">
 				<div class="row pt-5">
@@ -287,15 +318,16 @@
 						<div class="row mb-5">
 							<div class="col-lg-12 mb-4 mb-lg-0">
 								<a href="index.html" class="text-decoration-none">
-									<img src="img/mainLogo.png" class="img-fluid mb-4" style="height: 200px;width: 500px;">
+									<img src="img/mainLogo.png" class="img-fluid mb-4"
+										style="height: 200px;width: 500px;">
 								</a>
 								<!-- <p class="text-3-5 pe-lg-2"><i class="icon-location-pin icons"> </i>12 York street, M5J0A9, 
 									<br>Toronto, Ontario</p> -->
 							</div>
-							
-						</div>	
-						
-						
+
+						</div>
+
+
 						<!-- <div class="d-none d-xxl-inline-block ws-nowrap">
 							<a href="#"
 								class="btn border-0 px-4 py-2 line-height-9 btn-light text-color-dark me-2">Request
@@ -308,11 +340,16 @@
 							<div class="col-lg-4 mb-4 mb-lg-0">
 								<h4 class="text-color-light font-weight-semibold mb-3">Navigation</h4>
 								<ul class="list list-unstyled">
-									<li><a href="index.html" class="text-color-grey text-color-hover-light">Home</a></li>
-									<li><a href="about-us.html" class="text-color-grey text-color-hover-light">About Us</a></li>
-									<li><a href="services.html" class="text-color-grey text-color-hover-light">Services</a></li>
-									<li><a href="contact-us.html" class="text-color-grey text-color-hover-light">Contact Us</a></li>
-									<li><a href="environment.html" class="text-color-grey text-color-hover-light">Moving Tree</a></li>
+									<li><a href="index.html" class="text-color-grey text-color-hover-light">Home</a>
+									</li>
+									<li><a href="about-us.html" class="text-color-grey text-color-hover-light">About
+											Us</a></li>
+									<li><a href="services.html"
+											class="text-color-grey text-color-hover-light">Services</a></li>
+									<li><a href="contact-us.html" class="text-color-grey text-color-hover-light">Contact
+											Us</a></li>
+									<li><a href="environment.html" class="text-color-grey text-color-hover-light">Moving
+											Tree</a></li>
 								</ul>
 							</div>
 							<div class="col-lg-4">
@@ -320,29 +357,36 @@
 								<ul class="list list-unstyled">
 									<li><a href="blog.html" class="text-color-grey text-color-hover-light">Blogs</a>
 									</li>
-                                    <li><a href="privacypolicy.html" class="text-color-grey text-color-hover-light">Privacy Policy</a>
-									</li>	
-									<li><a href="termsandcondition.html" class="text-color-grey text-color-hover-light">Terms and Conditions</a>
+									<li><a href="privacypolicy.html"
+											class="text-color-grey text-color-hover-light">Privacy Policy</a>
+									</li>
+									<li><a href="termsandcondition.html"
+											class="text-color-grey text-color-hover-light">Terms and Conditions</a>
 									</li>
 								</ul>
 							</div>
-                            <div class="col-lg-4 mb-4 mb-lg-0">
+							<div class="col-lg-4 mb-4 mb-lg-0">
 								<h4 class="text-color-light font-weight-semibold mb-3">Contacts</h4>
 								<ul class="list list-unstyled">
-                                    <li class="d-flex align-items-center mb-4">
-                                        <a class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i class="icon-location-pin icons text-4-5 me-2"> </i> 12 York street, M5J0A9, 
-                                            Toronto, Ontario</a>
-                                    </li>
 									<li class="d-flex align-items-center mb-4">
-										<a href="mailto:move@socialcitymovers.com" target="_blank"
-                                        class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i class="far fa-envelope text-4-5 me-2"></i> move@socialcitymovers.com</a>
+										<a
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i
+												class="icon-location-pin icons text-4-5 me-2"> </i> 12 York street,
+											M5J0A9,
+											Toronto, Ontario</a>
 									</li>
 									<li class="d-flex align-items-center mb-4">
-										<a href="tel:+14376840666" class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1">
+										<a href="mailto:move@socialcitymovers.com" target="_blank"
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1"><i
+												class="far fa-envelope text-4-5 me-2"></i> move@socialcitymovers.com</a>
+									</li>
+									<li class="d-flex align-items-center mb-4">
+										<a href="tel:+14376840666"
+											class="d-flex align-items-center text-color-hover-light font-weight-medium ms-1">
 											<i class="icon icon-phone text-4-5 me-2"></i>
 											+1 (437) 684-0666
 										</a>
-									</li>	
+									</li>
 									<li>
 										<div class="d-none d-lg-inline-block">
 											<ul class="social-icons social-icons-clean social-icons-medium">
@@ -357,7 +401,8 @@
 													</a>
 												</li>
 												<li class="social-icons-instagram">
-													<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+													<a href="http://www.instagram.com/" target="_blank"
+														title="Instagram">
 														<i class="fab fa-instagram text-color-light"></i>
 													</a>
 												</li>
@@ -445,7 +490,7 @@
 	<script src="js/theme.init.js"></script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-	
+
 
 </body>
 
