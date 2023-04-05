@@ -64,20 +64,47 @@
 			<div class="header-body header-body-bottom-border border-top-0">
 				<div class="header-top header-top-bottom-containered-border pt-3" style="background-color: #343030; height: 20px;">
 					<div class="container">
-						<!-- <div class="row mb-0 pb-0"> -->
+						<!-- Swiper start-->
+						<div class="row mb-0 pb-0">
 							<div class="owl-carousel owl-theme nav-dark nav-style-1 nav-arrows-thin nav-font-size-lg nav-outside mb-0"
-									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 2000}">
+									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 4000}">
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
-										MOVING TORONTO & GTA SURROUNDING
-										AREAS</p>
+										We provide moving in Toronto & GTA surrounding areas
+									</p>
+								</div>
+								<div class="testimonial testimonial-style-5">
+									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
+										<a href="tel:+14376840666" style="color: #ffffff;" class="font-weight-medium">+1 (437) 684-0666 </a> Available 24*7
+									</p>
 								</div>
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
 										Keep it social , Keep it moving !</p>
 								</div>	
 							</div>	
-						<!-- </div> -->
+						</div>
+						<!-- Swiper end -->
+					</div>
+					<div class="d-none d-lg-inline-block" style="padding-right: 5px; padding-bottom: 15px;">
+						<ul class="social-icons social-icons-clean social-icons-medium">
+							<li class="social-icons-facebook">
+								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f text-color-light"></i>
+								</a>
+								</li>
+							<li class="social-icons-twitter">
+								<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+									<i class="fab fa-twitter text-color-light"></i>
+								</a>
+							</li>
+							<li class="social-icons-instagram">
+								<a href="http://www.instagram.com/" target="_blank"
+									title="Instagram">
+									<i class="fab fa-instagram text-color-light"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="header-container container">
@@ -275,22 +302,25 @@
 											<a href="specializedmoving.html" class="text-decoration-none text-color-dark text-color-hover-primary text-3-5">Specialized Moving</a>
 										</li>
 										<li>
+											<a href="pianomoving.html" class="text-decoration-none text-color-dark text-color-hover-primary text-3-5">piano Moving</a>
+										</li>
+										<!-- <li>
 											<a href="junkremoval.html" class="text-decoration-none text-color-dark text-color-hover-primary text-3-5">Junk Removal</a>
 										</li>
 										<li>
 											<a href="cleaningservices.html" class="text-decoration-none text-color-dark text-color-hover-primary text-3-5">Cleaning Services</a>
-										</li>
+										</li> -->
 									</ul>
 								</div>
 							</div>
 
-							<h3
+							<!--  <h3
 								class="text-color-dark font-weight-bold text-transform-none text-5-5 line-height-1 mb-3-5">
 								Contact Us</h3>
 							<p class="text-2 line-height-9">Contact us sending a message or give us a call to discover
 								how we can help. </p>
 
-							<form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+							<form class="contact-form form-style-3" action="php/quote.php" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
 									<strong>Success!</strong> Your message has been sent to us.
 								</div>
@@ -342,7 +372,7 @@
 										</button>
 									</div>
 								</div>
-							</form>
+							</form> --> 
 						</aside>
 					</div>
 				</div>
@@ -370,7 +400,7 @@
 						aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
-					<form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+					<form class="contact-form form-style-3" action="php/quote.php" method="POST">
 						
 						<div class="contact-form-success alert alert-success d-none mt-4">
 							<strong>Success!</strong> Your message has been sent to us.
@@ -382,18 +412,33 @@
 						</div>
 
 						<div class="row">
-							<div class="form-group col-lg-6">
-								<label class="form-label mb-1 text-2">Full Name</label>
-								<input type="text" value="" data-msg-required="Please enter your name."
-									maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
-							</div>
-							<div class="form-group col-lg-6">
-								<label class="form-label mb-1 text-2">Email Address</label>
-								<input type="email" value="" data-msg-required="Please enter your email"
-									data-msg-email="Please enter a valid email" maxlength="100"
-									class="form-control text-3 h-auto py-2" name="email" required>
-							</div>
-						</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">First Name</label>
+										<input type="text" value="" data-msg-required="Please enter your name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="fname"
+											required>
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Last Name</label>
+										<input type="text" value="" data-msg-required="Please enter your last name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="lname"
+											required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Contact no.</label>
+										<input type="tel" value="" data-msg-required="Please enter your contact number"
+											data-msg-email="Please enter a valid number" maxlength="14"
+											class="form-control text-3 h-auto py-2" name="contactno" required>
+									</div>
+									<div class=" form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Email Address</label>
+										<input type="email" value="" data-msg-required="Please enter your email"
+											data-msg-email="Please enter a valid email" maxlength="100"
+											class="form-control text-3 h-auto py-2" name="email" required>
+									</div>
+								</div>
 						<div class="row">
 							<div class="form-group col-lg-6">
 								<label class="form-label mb-1 text-2">Date of Moving</label>

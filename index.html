@@ -165,20 +165,47 @@
 			<div class="header-body header-body-bottom-border border-top-0">
 				<div class="header-top header-top-bottom-containered-border pt-3" style="background-color: #343030; height: 20px;">
 					<div class="container">
-						<!-- <div class="row mb-0 pb-0"> -->
+						<!-- Swiper start-->
+						<div class="row mb-0 pb-0">
 							<div class="owl-carousel owl-theme nav-dark nav-style-1 nav-arrows-thin nav-font-size-lg nav-outside mb-0"
-									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 2000}">
+									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 4000}">
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
-										MOVING TORONTO & GTA SURROUNDING
-										AREAS</p>
+										We provide moving in Toronto & GTA surrounding areas
+									</p>
+								</div>
+								<div class="testimonial testimonial-style-5">
+									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
+										<a href="tel:+14376840666" style="color: #ffffff;" class="font-weight-medium">+1 (437) 684-0666 </a> Available 24*7
+									</p>
 								</div>
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
 										Keep it social , Keep it moving !</p>
 								</div>	
 							</div>	
-						<!-- </div> -->
+						</div>
+						<!-- Swiper end -->
+					</div>
+					<div class="d-none d-lg-inline-block" style="padding-right: 5px; padding-bottom: 15px;">
+						<ul class="social-icons social-icons-clean social-icons-medium">
+							<li class="social-icons-facebook">
+								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f text-color-light"></i>
+								</a>
+								</li>
+							<li class="social-icons-twitter">
+								<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+									<i class="fab fa-twitter text-color-light"></i>
+								</a>
+							</li>
+							<li class="social-icons-instagram">
+								<a href="http://www.instagram.com/" target="_blank"
+									title="Instagram">
+									<i class="fab fa-instagram text-color-light"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<hr style="margin: 0px 0px; padding: 0px 0px;">
@@ -259,7 +286,7 @@
 						<div class="owl-stage">
 							<!-- Carousel Slide 1 -->
 							<div class="owl-item position-relative overflow-hidden">
-								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"  data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/homebanner1.jpg); background-size: cover; background-position: center;"></div>
+								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0"  data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/homebanner1.jpg); background-size: cover; background-position: center; width: 100%;"></div>
 							</div>
 							<!-- Carousel Slide 2 -->
 							<div class="owl-item position-relative overflow-hidden">
@@ -341,7 +368,7 @@
 								<p class="custom-font-secondary text-4 pb-1 mb-2">Enter your details in the form and
 									we
 									will call you back.</p>
-								<form class="contact-form custom-form-style-1" action="php/contact-form.php"
+								<form class="contact-form custom-form-style-1" action="php/quote.php"
 									method="POST">
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Success!</strong> Your request has been sent to us.
@@ -355,8 +382,16 @@
 									<div class="row">
 										<div class="form-group col-lg-6 col-sm-12 pb-1 mb-3">
 											<input type="text" value="" data-msg-required="Please enter your name."
-												maxlength="100" class="form-control" name="name" placeholder="Full Name"
-												required>
+											maxlength="100" class="form-control" placeholder="First Name" name="fname" required>
+										</div>
+										<div class="form-group col-lg-6 col-sm-12 pb-1 mb-3">
+											<input type="text" value="" data-msg-required="Please enter your last name."
+											maxlength="100" class="form-control" placeholder="Last Name" name="lname" required>
+										</div>
+										<div class="form-group col-lg-6 col-sm-12 pb-1 mb-3">
+											<input type="tel" value="" data-msg-required="Please enter your contact number"
+											data-msg-email="Please enter a valid number" maxlength="14"
+											class="form-control" placeholder="Contact no." name="contactno" required>
 										</div>
 										<div class="form-group col-lg-6 col-sm-12 pb-1 mb-3">
 											<input type="email" value=""
@@ -525,7 +560,8 @@
 												d="M19,49C75.19,30.63,152,21,317.26,17.27c55.43-.41,198.33-2.08,407.85,12.53"
 												stroke="#212529" pathLength="1" stroke-width="14" fill="none">
 											</path>
-										</svg></span></em></h2>
+										</svg></span></em>
+							</h2>
 						</div>
 					</div>
 				</div>
@@ -703,6 +739,31 @@
 									<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper">
 										<span
 											class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+											<img src="img/piano1.jpg" class="img-fluid" alt="">
+											<span
+												class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0 text-center">
+												<span class="thumb-info-swap-content-wrapper">
+													<span class="thumb-info-inner text-3-5 pb-2">
+														Piano Moving
+													</span>
+													<span class="thumb-info-inner text-2">
+														<p
+															class="px-5 text-2 opacity-7 font-weight-medium text-light ls-0">
+															content</p>
+														<a href="pianomoving.html"
+															class="btn border-0 px-3 py-1 line-height-8 btn-primary ls-0">View
+															Details</a>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</div>
+								<!-- Junk removal -->
+								<!-- <div>
+									<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper">
+										<span
+											class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
 											<img src="img/Junk removels.jpg" class="img-fluid" alt="">
 											<span
 												class="thumb-info-title bottom-30 bg-transparent w-100 mw-100 p-0 text-center">
@@ -725,9 +786,9 @@
 											</span>
 										</span>
 									</span>
-								</div>
-
-								<div>
+								</div> -->
+								<!-- Cleaning service -->
+								<!-- <div>
 									<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper">
 										<span
 											class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
@@ -753,7 +814,8 @@
 											</span>
 										</span>
 									</span>
-								</div>
+								</div> -->
+
 							</div>
 
 						</div>
@@ -1146,12 +1208,26 @@
 
 								<div class="row">
 									<div class="form-group col-lg-6">
-										<label class="form-label mb-1 text-2">Full Name</label>
+										<label class="form-label mb-1 text-2">First Name</label>
 										<input type="text" value="" data-msg-required="Please enter your name."
-											maxlength="100" class="form-control text-3 h-auto py-2" name="name"
+											maxlength="100" class="form-control text-3 h-auto py-2" name="fname"
 											required>
 									</div>
 									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Last Name</label>
+										<input type="text" value="" data-msg-required="Please enter your last name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="lname"
+											required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Contact no.</label>
+										<input type="tel" value="" data-msg-required="Please enter your contact number"
+											data-msg-email="Please enter a valid number" maxlength="14"
+											class="form-control text-3 h-auto py-2" name="contactno" required>
+									</div>
+									<div class=" form-group col-lg-6">
 										<label class="form-label mb-1 text-2">Email Address</label>
 										<input type="email" value="" data-msg-required="Please enter your email"
 											data-msg-email="Please enter a valid email" maxlength="100"
@@ -1162,7 +1238,7 @@
 									<div class="form-group col-lg-6">
 										<label class="form-label mb-1 text-2">Date of Moving</label>
 										<input type="date" name="movingdate" class="form-control"
-											data-msg-required="Please enter date" placeholder="Date" />
+											data-msg-required="Please enter date" placeholder="Date" required/>
 									</div>
 									<div class="form-group col-lg-6">
 										<label class="form-label mb-1 text-2">Specialized moving</label>

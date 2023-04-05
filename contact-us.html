@@ -63,20 +63,47 @@
 			<div class="header-body header-body-bottom-border border-top-0">
 				<div class="header-top header-top-bottom-containered-border pt-3" style="background-color: #343030; height: 20px;">
 					<div class="container">
-						<!-- <div class="row mb-0 pb-0"> -->
+						<!-- Swiper start-->
+						<div class="row mb-0 pb-0">
 							<div class="owl-carousel owl-theme nav-dark nav-style-1 nav-arrows-thin nav-font-size-lg nav-outside mb-0"
-									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 2000}">
+									data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 10 , 'autoplay': true, 'autoplayTimeout': 4000}">
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
-										MOVING TORONTO & GTA SURROUNDING
-										AREAS</p>
+										We provide moving in Toronto & GTA surrounding areas
+									</p>
+								</div>
+								<div class="testimonial testimonial-style-5">
+									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
+										<a href="tel:+14376840666" style="color: #ffffff;" class="font-weight-medium">+1 (437) 684-0666 </a> Available 24*7
+									</p>
 								</div>
 								<div class="testimonial testimonial-style-5">
 									<p class="font-weight-bold text-3" style="color: #ffffff; margin-bottom: 0px;">
 										Keep it social , Keep it moving !</p>
 								</div>	
 							</div>	
-						<!-- </div> -->
+						</div>
+						<!-- Swiper end -->
+					</div>
+					<div class="d-none d-lg-inline-block" style="padding-right: 5px; padding-bottom: 15px;">
+						<ul class="social-icons social-icons-clean social-icons-medium">
+							<li class="social-icons-facebook">
+								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f text-color-light"></i>
+								</a>
+								</li>
+							<li class="social-icons-twitter">
+								<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+									<i class="fab fa-twitter text-color-light"></i>
+								</a>
+							</li>
+							<li class="social-icons-instagram">
+								<a href="http://www.instagram.com/" target="_blank"
+									title="Instagram">
+									<i class="fab fa-instagram text-color-light"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="header-container container">
@@ -176,7 +203,7 @@
 						<!-- <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2> -->
 						<p class="mb-4">Feel free to ask for details, don't save any questions!</p>
 
-						<form class="contact-form" action="php/contact-form.php" method="POST">
+						<form class="contact-form" action="php/quote.php" method="POST">
 							<div class="contact-form-success alert alert-success d-none mt-4">
 								<strong>Success!</strong> Your message has been sent to us.
 							</div>
@@ -228,25 +255,25 @@
 							<h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
 							<ul class="list list-icons list-icons-style-2 mt-2">
 								<li><i class="fas fa-map-marker-alt top-6"></i> <strong
-										class="text-dark">Address:</strong> 1234 Street Name, City Name, United States
+										class="text-dark">Address:</strong><span> 12 York street, M5J0A9, Toronto, Ontario</span>
 								</li>
-								<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123)
-									456-789</li>
-								<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a
-										href="mailto:mail@example.com">mail@example.com</a></li>
+								<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong>
+									<a href="tel:+14376840666"> +1 (437) 684-0666</a>
+								</li>
+								<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> 
+									<a href="mailto:mail@example.com">move@socialcitymovers.com</a>
+								</li>
 							</ul>
 						</div>
 
 						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
-							<h4 class="pt-5">Business <strong>Hours</strong></h4>
+							<h4 class="pt-4">Business <strong>Hours</strong></h4>
 							<ul class="list list-icons list-dark mt-2">
-								<li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
-								<li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
-								<li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+								<li><i class="far fa-clock top-6"></i> Available 24*7</li>
 							</ul>
 						</div>
 
-						<h4 class="pt-5">Get in <strong>Touch</strong></h4>
+						<h4 class="pt-3">Get in <strong>Touch</strong></h4>
 						<p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 							eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -260,6 +287,104 @@
 			<hr>
 
 		</div>
+
+		<!--START MODAL-->
+		<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="formModalLabel">Get Quick Quote</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form class="contact-form form-style-3" action="php/quote.php" method="POST">
+
+						<div class="contact-form-success alert alert-success d-none mt-4">
+							<strong>Success!</strong> Your message has been sent to us.
+						</div>
+
+						<div class="contact-form-error alert alert-danger d-none mt-4">
+							<strong>Error!</strong> There was an error sending your message.
+							<span class="mail-error-message text-1 d-block"></span>
+						</div>
+
+						<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">First Name</label>
+										<input type="text" value="" data-msg-required="Please enter your name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="fname"
+											required>
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Last Name</label>
+										<input type="text" value="" data-msg-required="Please enter your last name."
+											maxlength="100" class="form-control text-3 h-auto py-2" name="lname"
+											required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Contact no.</label>
+										<input type="tel" value="" data-msg-required="Please enter your contact number"
+											data-msg-email="Please enter a valid number" maxlength="14"
+											class="form-control text-3 h-auto py-2" name="contactno" required>
+									</div>
+									<div class=" form-group col-lg-6">
+										<label class="form-label mb-1 text-2">Email Address</label>
+										<input type="email" value="" data-msg-required="Please enter your email"
+											data-msg-email="Please enter a valid email" maxlength="100"
+											class="form-control text-3 h-auto py-2" name="email" required>
+									</div>
+								</div>
+						<div class="row">
+							<div class="form-group col-lg-6">
+								<label class="form-label mb-1 text-2">Date of Moving</label>
+								<input type="date" name="movingdate" class="form-control"
+									data-msg-required="Please enter date" placeholder="Date" />
+							</div>
+							<div class="form-group col-lg-6">
+								<label class="form-label mb-1 text-2">Specialized moving</label>
+								<select class="form-select form-control h-auto py-2" data-msg-required=""
+									name="specializedmoving" required>
+									<option value="">Choose...</option>
+									<option value="1">Apartment Piano</option>
+									<option value="2">Upright Piano</option>
+									<option value="3">Baby Grand Piano</option>
+									<option value="4">Grand Piano</option>
+									<option value="5">Room or Less</option>
+									<option value="6">Studio Apartment</option>
+									<option value="7">1 Bedroom Apartment</option>
+									<option value="8">2 Bedroom Apartment</option>
+									<option value="9">3 Bedroom Apartment</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-lg-6">
+								<label class="form-label mb-1 text-2">Pick up Address</label>
+								<textarea rows="2" name="pickup" class="form-control" placeholder="address"
+									data-msg-required="Please enter address" required></textarea>
+							</div>
+							<div class="form-group col-lg-6">
+								<label class="form-label mb-1 text-2">Drop Address</label>
+								<textarea rows="2" name="drop" class="form-control" placeholder="address"
+									data-msg-required="Please enter address" required></textarea>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" data-loading-text="Loading..."> Save
+								Changes</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--MODAL END-->
+
 		<section class="section my-0 py-5 border-0  text-color-light p-relative overflow-hidden"
 			style="background-color: rgb(56, 168, 56);">
 			<div class="container container-xl-custom">
@@ -267,7 +392,7 @@
 					<div class="col-lg-3 text-lg-end">
 						<h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-0 appear-animation"
 							data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"
-							data-plugin-options="{'minWindowWidth': 0}">Leaving a tree for<br><span
+							data-plugin-options="{'minWindowWidth': 0}">Leaving a plant for<br><span
 								class="font-weight-extra-bold custom-highlight-1 custom-highlight-1-tertiary ws-nowrap p-1 custom-highlight-anim custom-highlight-anim-delay">every move!</span>
 						</h2>
 					</div>
@@ -287,7 +412,6 @@
 			</div>
 		</section>
 		<footer id="footer" class="position-relative top-1 bg-tertiary border-top-0">
-
 			<div class="container">
 				<div class="row pt-5">
 					<div class="col-lg-4">

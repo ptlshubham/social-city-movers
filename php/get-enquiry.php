@@ -14,7 +14,7 @@ if($dbConn->connect_error)
 }
 
 
-$qry = "select name, email, moving_date, specialized, pickup_address, drop_address,contact,createddate from enquiry";
+$qry = "select fname, lname, contactno, email, moving_date, specialized, pickup_address, drop_address,contact,createddate from enquiry";
 
 $rs = $dbConn->query($qry);
 
@@ -24,12 +24,12 @@ $createTable = '<table>';
 $createTable .= '<tr>';
 $createTable .= '<th>Date</th>';
 $createTable .= '<th>Name</th>';
+$createTable .= '<th>Contactno</th>'
 $createTable .= '<th>Email</th>';
 $createTable .= '<th>Moving Date</th>';
 $createTable .= '<th>Specialized Moving</th>';
 $createTable .= '<th>Pickup Address</th>';
 $createTable .= '<th>Drop Address</th>';
-$createTable .= '<th>Contact</th>';
 $createTable .= '</tr>';
 
 
@@ -37,13 +37,13 @@ foreach($fetchAllData as $customerData)
 {
 	$createTable .= '<tr>';
 	$createTable .= '<td>'.$customerData['createddate'].'</td>';
-	$createTable .= '<td>'.$customerData['name'].'</td>';
+	$createTable .= '<td>'.$customerData['fname + ' ' + lname'].'</td>';
+	$createTable .= '<td>'.$customerData['contactno'].'</td>';
 	$createTable .= '<td>'.$customerData['email'].'</td>';
 	$createTable .= '<td>'.$customerData['moving_date'].'</td>';
 	$createTable .= '<td>'.$customerData['specialized'].'</td>';
 	$createTable .= '<td>'.$customerData['pickup_address'].'</td>';
 	$createTable .= '<td>'.$customerData['drop_address'].'</td>';
-	$createTable .= '<td>'.$customerData['contact'].'</td>';
 
 	$createTable .= '</tr>';	
 }

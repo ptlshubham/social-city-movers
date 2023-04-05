@@ -18,16 +18,17 @@ if (!$conn) {
 
 echo "Connected successfully";
 
-$name = $_REQUEST['name'];
-// $lastname = $_REQUEST['lastname'];
+$firstname = $_REQUEST['fname'];
+$lastname = $_REQUEST['lname'];
+$contactno = $_REQUEST['contactno'];
 $email = $_REQUEST['email'];
 $movingdate = $_REQUEST['movingdate'];
 $specializedmoving=$_REQUEST['specializedmoving'];
 $pickup = $_REQUEST['pickup'];
 $drop = $_REQUEST['drop'];
  
-$sql = "INSERT INTO `enquiry`(`name`, `email`, `moving_date`, `specialized`, `pickup_address`, `drop_address`, `createddate`) VALUES
-('$name', '$email', '$movingdate', '$specializedmoving','$pickup','$drop',CURRENT_TIMESTAMP);";
+$sql = "INSERT INTO `enquiry`(`fname`, `lname`, `contactno`, `email`, `moving_date`, `specialized`, `pickup_address`, `drop_address`, `createddate`) VALUES
+('$firstname','$lastname', '$contactno', '$email', '$movingdate', '$specializedmoving','$pickup','$drop',CURRENT_TIMESTAMP);";
 if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
 	$arrResult = array ('response'=>'success');
