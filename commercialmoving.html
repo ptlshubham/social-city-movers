@@ -745,30 +745,30 @@
 		s.async = true;
 		s.src = url;
 		var options = {
-	  "enabled":true,
-	  "chatButtonSetting":{
-		  "backgroundColor":"#4dc247",
-		  "ctaText":"",
-		  "borderRadius":"25",
-		  "marginLeft":"0",
-		  "marginBottom":"50",
-		  "marginRight":"50",
-		  "position":"right"
-	  },
-	  "brandSetting":{
-		  "brandName":"Social City Movers",
-		  "brandSubTitle":"Keep it social , keep it moving!",
-		  "brandImg":"https://rumit.co.in/socialmovers/img/mainLogo.png",
-		  "welcomeText":"Hi there!\nHow can I help you?",
-		  "messageText":"Hello, I have a question about Moving?",
-		  "backgroundColor":"#0a5f54",
-		  "ctaText":"Start Chat",
-		  "borderRadius":"25",
-		  "autoShow":false,
-		  "phoneNumber":"14376840666"
-	  }
-	};
-		s.onload = function() {
+			"enabled": true,
+			"chatButtonSetting": {
+				"backgroundColor": "#4dc247",
+				"ctaText": "",
+				"borderRadius": "25",
+				"marginLeft": "0",
+				"marginBottom": "50",
+				"marginRight": "10",
+				"position": "right"
+			},
+			"brandSetting": {
+				"brandName": "Social City Movers",
+				"brandSubTitle": "Keep it social , keep it moving!",
+				"brandImg": "https://rumit.co.in/socialmovers/img/mainLogo.png",
+				"welcomeText": "Hi there!\nHow can I help you?",
+				"messageText": "Hello, I have a question about Moving?",
+				"backgroundColor": "#0a5f54",
+				"ctaText": "Start Chat",
+				"borderRadius": "25",
+				"autoShow": false,
+				"phoneNumber": "14376840666"
+			}
+		};
+		s.onload = function () {
 			CreateWhatsappChatWidget(options);
 		};
 		var x = document.getElementsByTagName('script')[0];
