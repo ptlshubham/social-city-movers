@@ -19,7 +19,7 @@ Theme Version:	9.9.2
 	            }
 	        },
 	        "color": {
-	            "value": "#0088cc"
+	            "value": "#00184c"
 	        },
 	        "shape": {
 	            "type": "circle",
@@ -54,7 +54,7 @@ Theme Version:	9.9.2
 	        "line_linked": {
 	            "enable": false,
 	            "distance": 150,
-	            "color": "#0088cc",
+	            "color": "#00184c",
 	            "opacity": 0.4,
 	            "width": 1
 	        },
@@ -126,7 +126,7 @@ Theme Version:	9.9.2
 	            }
 	        },
 	        "color": {
-	            "value": "#0088cc"
+	            "value": "#00184c"
 	        },
 	        "shape": {
 	            "type": "circle",
@@ -161,7 +161,7 @@ Theme Version:	9.9.2
 	        "line_linked": {
 	            "enable": false,
 	            "distance": 150,
-	            "color": "#0088cc",
+	            "color": "#00184c",
 	            "opacity": 0.4,
 	            "width": 1
 	        },
@@ -233,7 +233,7 @@ Theme Version:	9.9.2
 	            }
 	        },
 	        "color": {
-	            "value": "#0088cc"
+	            "value": "#00184c"
 	        },
 	        "shape": {
 	            "type": "polygon",
@@ -340,7 +340,7 @@ Theme Version:	9.9.2
 	            }
 	        },
 	        "color": {
-	            "value": "#0088cc"
+	            "value": "#00184c"
 	        },
 	        "shape": {
 	            "type": "circle",
@@ -380,7 +380,7 @@ Theme Version:	9.9.2
 	        "line_linked": {
 	            "enable": true,
 	            "distance": 150,
-	            "color": "#0088cc",
+	            "color": "#00184c",
 	            "opacity": 0.4,
 	            "width": 1
 	        },
