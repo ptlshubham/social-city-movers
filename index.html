@@ -86,7 +86,7 @@
 		<div class="gdpr-bar-actions">
 			<a href="#" class="gdpr-preferences-trigger text-decoration-none text-color-light">Privacy
 				Preferences</a>
-			<a href="#"
+			<a href="#" id="agreeBtn"
 				class="gdpr-agree-trigger text-decoration-none btn btn-primary btn-modern btn-px-4 py-3 font-weight-bold">I
 				Agree</a>
 		</div>
@@ -176,7 +176,7 @@
 	</div>
 	<div class="p-relative bottom-1">
 		<header id="header" class="header-effect-shrink"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 85}">
+			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 10, 'stickyHeaderContainerHeight': 85}">
 			<div class="header-body header-body-bottom-border border-top-0">
 				<div class="header-top header-top-bottom-containered-border pt-3"
 					style="background-color: #00184C; height: 20px;">
@@ -211,14 +211,13 @@
 								<a href="https://www.facebook.com/Socialcitymovers" target="_blank" title="Facebook">
 									<i class="fab fa-facebook-f text-color-light"></i>
 								</a>
-							</li>
-							 
-							<li class="social-icons-instagram">
-								<a href="https://www.instagram.com/socialcitymovers/" target="_blank" title="Instagram">
+							</div>
+							<div class="social-icons-instagram social-icons-clean social-icons-medium p-2"><a
+									href="https://www.instagram.com/socialcitymovers/" target="_blank"
+									title="Instagram">
 									<i class="fab fa-instagram text-color-light"></i>
-								</a>
-							</li>
-						</ul>
+								</a></div>
+						</div>
 					</div>
 				</div>
 
@@ -229,7 +228,8 @@
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="https://socialcitymovers.com/">
-										<img src="img/final-logo.png" class="img-fluid img-custom-log" alt="header-logo" />
+										<img src="img/final-logo.png" class="img-fluid img-custom-log"
+											alt="header-logo" />
 									</a>
 								</div>
 							</div>
@@ -1384,14 +1384,15 @@
 										<div class="d-sm d-md d-lg-inline-block">
 											<ul class="social-icons social-icons-clean social-icons-medium">
 												<li class="social-icons-facebook">
-													<a href="https://www.facebook.com/Socialcitymovers" target="_blank" title="Facebook">
+													<a href="https://www.facebook.com/Socialcitymovers" target="_blank"
+														title="Facebook">
 														<i class="fab fa-facebook-f text-color-light"></i>
 													</a>
 												</li>
-												
+
 												<li class="social-icons-instagram">
-													<a href="https://www.instagram.com/socialcitymovers/" target="_blank"
-														title="Instagram">
+													<a href="https://www.instagram.com/socialcitymovers/"
+														target="_blank" title="Instagram">
 														<i class="fab fa-instagram text-color-light"></i>
 													</a>
 												</li>
@@ -1556,6 +1557,23 @@
 
 		mapRef.mapTypes.set('map_style', styledMap);
 		mapRef.setMapTypeId('map_style');
+
+	</script>
+	<script>
+		// Function to set a cookie
+		function setCookie(cookieName, cookieValue, expirationDays) {
+			var date = new Date();
+			date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+			var expires = "expires=" + date.toUTCString();
+			document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+		}
+
+		// Add event listener to the "I Agree" button
+		var agreeBtn = document.getElementById("agreeBtn");
+		agreeBtn.addEventListener("click", function () {
+			// Set the cookie when the button is clicked
+			setCookie("myCookie", "cookieValue", 365); // Example: Cookie name is "myCookie" with value "cookieValue" and expires in 365 days
+		});
 
 	</script>
 	<script>
