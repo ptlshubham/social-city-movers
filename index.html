@@ -56,7 +56,21 @@
 
 	<!-- Head Libs -->
 	<script src="vendor/modernizr/modernizr.min.js"></script>
-	
+
+<style>
+  .header-top {
+    position: relative;
+    z-index: 2;
+  }
+
+  .social-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }	
+</style>
+  
 </head>
 
 
@@ -191,7 +205,7 @@
 						</div>
 						<!-- Swiper end -->
 					</div>
-					<div class="d-none d-lg-inline-block" style="padding-right: 10px; padding-bottom: 20px;">
+					<div class="d-none d-lg-inline-block" style="padding-right: 5px; padding-bottom: 15px;">
 						<ul class="social-icons social-icons-clean social-icons-medium">
 							<li class="social-icons-facebook">
 								<a href="https://www.facebook.com/Socialcitymovers" target="_blank" title="Facebook">
@@ -207,6 +221,7 @@
 						</ul>
 					</div>
 				</div>
+
 				<hr style="margin: 0px 0px; padding: 0px 0px;">
 				<div class="header-container container mt-0 pt-0">
 					<div class="header-row">
@@ -252,11 +267,8 @@
 													</a>
 												</li>
 												<li>
-													<a href="#" class="nav-link" data-bs-toggle="modal"
-														data-bs-target="#formModal">
-														<button
-															class="btn btn-primary btn-modern font-weight-bold text-3">Get
-															A QUOTE <i class="fas fa-arrow-right ms-2"></i></button>
+												    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#formModal">
+														<button class="btn btn-primary btn-modern font-weight-bold text-3">Get A QUOTE <i class="fas fa-arrow-right ms-2"></i></button>
 													</a>
 												</li>
 											</ul>

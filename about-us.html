@@ -57,13 +57,17 @@
 	<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	<style>
-		.social-icons-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(0, 25%);
-}
+		  .header-top {
+    position: relative;
+    z-index: 2;
+  }
 
+  .social-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 	</style>
 </head>
 
@@ -100,20 +104,21 @@
 						</div>
 						<!-- Swiper end -->
 					</div>
-					<div class="d-none d-lg-inline-block social-icons-container">
+					<div class="d-none d-lg-inline-block" style="padding-right: 5px; padding-bottom: 15px;">
 						<ul class="social-icons social-icons-clean social-icons-medium">
-						  <li class="social-icons-facebook">
-							<a href="https://www.facebook.com/Socialcitymovers" target="_blank" title="Facebook">
-							  <i class="fab fa-facebook-f text-color-light"></i>
-							</a>
-						  </li>
-						  <li class="social-icons-instagram">
-							<a href="https://www.instagram.com/socialcitymovers/" target="_blank" title="Instagram">
-							  <i class="fab fa-instagram text-color-light"></i>
-							</a>
-						  </li>
+							<li class="social-icons-facebook">
+								<a href="https://www.facebook.com/Socialcitymovers" target="_blank" title="Facebook">
+									<i class="fab fa-facebook-f text-color-light"></i>
+								</a>
+							</li>
+							 
+							<li class="social-icons-instagram">
+								<a href="https://www.instagram.com/socialcitymovers/" target="_blank" title="Instagram">
+									<i class="fab fa-instagram text-color-light"></i>
+								</a>
+							</li>
 						</ul>
-					  </div>
+					</div>
 				</div>
 
 				<hr style="margin: 0px 0px; padding: 0px 0px;">
